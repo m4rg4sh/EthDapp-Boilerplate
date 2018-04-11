@@ -6,11 +6,15 @@
     <body>
         <h1>Welcome to web3 - looking like web1!</h1>
         <div id="content">Can I has web3?!</div>
-        <form id="my-form">
-            <input type="text" name="greeting" id="greeting" value="new greeting" />
-            <button type="submit">Write greeting to blockchain!</button>
+        <form id="buyToken">
+            <input type="number" name="amount" id="amount" value="1"  step="0.00001" min="0"/> Ether<br />
+            <button type="submit">Buy Tokens!</button>
         </form>
-        <img src="./ani_what.gif" alt="WHATEVER MAKES YOU HAPPY" width="300" height="50" border="0">
+        <form id="transferToken">
+            <input type="number" name="transferamount" id="transferamount" value="1"  step="0.00001" min="0"/> Token<br />
+            Recipient: <input type="string" name="to" id="to" value="0x0" /><br />
+            <button type="submit">Transfer Tokens!</button>
+        </form>
         <script src="custom.js"></script>
     </body>
 </html>
